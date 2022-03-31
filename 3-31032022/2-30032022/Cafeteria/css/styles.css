@@ -139,3 +139,76 @@ h2 {
   transform: scale(1.2);
   opacity: 1;
 }
+/* ============================================ fim da HOME ================================ */
+
+/* =========================================== Inicio do estilo da historia =============================== */
+
+#historia p {
+  width: 70%;
+  font-family: arial;
+  font-size: 12pt;
+  line-height: 30pt;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imghistoria {
+  text-align: center;
+}
+
+#imghistoria img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+  margin: 20px;
+}
+
+/* ======================================== fim do historia =============================== */
+
+/* ====================================== inicio do cardapio ====================================== */
+
+h3 {
+  font-family: arial;
+  font-size: 25pt;
+  margin: 30px;
+}
+
+#linha {
+  padding: 30px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /*quebra de linha */
+  box-shadow: 3px 3px 15px black;
+  justify-content: center;
+}
+
+#linha div {
+  width: 30%;
+  margin: 10px;
+  border: 1px solid silver; /*linha na borda */
+}
+
+#linha div img {
+  width: 100%;
+  height: 300px;
+}
+
+#linha div h4 {
+  font-family: arial;
+  font-size: 15pt;
+  margin: 10px;
+}
+
+#linha div p {
+  font-family: arial;
+  font-size: 15pt;
+  color: black;
+  font-weight: bold; /* deixa em negrito */
+}
