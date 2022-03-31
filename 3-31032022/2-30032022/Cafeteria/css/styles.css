@@ -96,3 +96,46 @@ footer div {
   width: 52px;
   height: 52px;
 }
+
+/* =========================================== inicio do CSS da Home =====================================*/
+
+h2 {
+  font-family: arial;
+  font-size: 20pt;
+  margin: 50px;
+  border-bottom: 2px solid silver;
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#home p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial;
+  font-size: 12pt;
+  line-height: 25pt; /* espaçamento entre linhas */
+  text-align: justify;
+}
+
+#imghome {
+  text-align: center;
+}
+
+#imghome img {
+  width: 200px;
+  height: 200px;
+  margin: 15px;
+  border-radius: 150px;
+  opacity: 0.8;
+  transition: ease 1s;
+
+  /* mudar o cursor do mouse para um mão */
+  cursor: pointer;
+}
+
+#imghome img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
