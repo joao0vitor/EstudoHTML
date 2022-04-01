@@ -49,7 +49,7 @@ nav ul li {
   /* dispor os itens da lista em linha */
   display: inline-block;
 
-  /* aumentar a distancia entre os elementos */
+  /* aumentar a distancia entre os elementosdentro da caixa (padding) (margin) do lado de fora */
   padding: 20px;
   transition: ease 1s;
 }
@@ -211,4 +211,54 @@ h3 {
   font-size: 15pt;
   color: black;
   font-weight: bold; /* deixa em negrito */
+}
+
+/* ========================================== final da linha cardapio =========================================== */
+
+/* =============================================== formatação CSS para a página contato =================================== */
+
+main form {
+  width: 40%;
+  padding: 10px;
+  background-color: rgb(32, 8, 8);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main form input[type="text"],
+main form input[type="email"],
+main form input[type="tel"],
+main form select,
+main form textarea {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 0px;
+  border-bottom: 10px solid silver;
+  border-radius: 15px;
+  display: block;
+}
+main form input[type="tel"],
+main form select {
+  width: 30%;
+  display: inline-block;
+  margin: 17px;
+  margin-left: 70px;
+}
+
+main form textarea {
+  border-radius: 0px;
+  height: 250px;
+  border: 1px solid silver;
+}
+
+main form input[type="submit"] {
+  padding: 10px;
+  border: 0px;
+  background-color: silver;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  border-radius: 7px;
 }
