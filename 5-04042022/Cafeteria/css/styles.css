@@ -1,0 +1,339 @@
+/*
+Arquvio css para formatação do site da cafeteria
+*/
+
+/*aplicar a formatação a todos os elementos. 
+usaremos o asterisco(*)
+*/
+
+* {
+  /* zerar as margens externas dos elementos */
+  margin: 0;
+  /* zerar as margens internas dos elementos */
+  padding: 0;
+  /* ajuste das caixas(box) dos elementos */
+  box-sizing: border-box;
+}
+
+header {
+  height: 300px; /*altura da caixa */
+
+  /* adicionar uma imagem ao fundo */
+  background-image: url("../img/cafe1.jpg");
+
+  /* ajustar a largura da imagem em 100% */
+  background-size: 100%;
+
+  /* ajustar a posição em x e y da imagem de fundo */
+  background-position: 0 -300px;
+
+  /* animação de fundo */
+  transition: ease 1s;
+  padding-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "verdana";
+  color: white;
+
+  /* aplicar uma sombra no texto */
+  text-shadow: 10px 10px 4px black;
+}
+
+nav {
+  background-color: rgb(117, 116, 116);
+  text-align: center;
+}
+nav ul li {
+  /* dispor os itens da lista em linha */
+  display: inline-block;
+
+  /* aumentar a distancia entre os elementosdentro da caixa (padding) (margin) do lado de fora */
+  padding: 20px;
+  transition: ease 1s;
+}
+
+/* ao passar o mouse sobre o link o fundo do link deve alterar a sua cor */
+nav ul li:hover {
+  background-color: black;
+}
+
+nav ul li a {
+  font-family: verdana;
+  font-size: 10pt;
+  color: white;
+
+  /* retirar o underline do link */
+  text-decoration: none; /* none=nenhum*/
+}
+
+footer {
+  height: 300px; /*altura em 300px*/
+  background-color: black;
+  color: white;
+  font-family: arial;
+  padding-top: 20px;
+
+  /* dispor de forma flexivel e em linha */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  width: 20%;
+  margin: 5%;
+}
+
+#redes ul li {
+  display: inline;
+  margin-left: 5px;
+}
+
+#redes ul li a img {
+  width: 52px;
+  height: 52px;
+}
+
+/* =========================================== inicio do CSS da Home =====================================*/
+
+h2 {
+  font-family: arial;
+  font-size: 20pt;
+  margin: 50px;
+  border-bottom: 2px solid silver;
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#home p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial;
+  font-size: 12pt;
+  line-height: 25pt; /* espaçamento entre linhas */
+  text-align: justify;
+}
+
+#imghome {
+  text-align: center;
+}
+
+#imghome img {
+  width: 200px;
+  height: 200px;
+  margin: 15px;
+  border-radius: 150px;
+  opacity: 0.8;
+  transition: ease 1s;
+
+  /* mudar o cursor do mouse para um mão */
+  cursor: pointer;
+}
+
+#imghome img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+/* ============================================ fim da HOME ================================ */
+
+/* =========================================== Inicio do estilo da historia =============================== */
+
+#historia p {
+  width: 70%;
+  font-family: arial;
+  font-size: 12pt;
+  line-height: 30pt;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imghistoria {
+  text-align: center;
+}
+
+#imghistoria img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+  margin: 20px;
+}
+
+/* ======================================== fim do historia =============================== */
+
+/* ====================================== inicio do cardapio ====================================== */
+
+h3 {
+  font-family: arial;
+  font-size: 25pt;
+  margin: 30px;
+}
+
+#linha {
+  padding: 30px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /*quebra de linha */
+  box-shadow: 3px 3px 15px black;
+  justify-content: center;
+}
+
+#linha div {
+  width: 30%;
+  margin: 10px;
+  border: 1px solid silver; /*linha na borda */
+}
+
+#linha div img {
+  width: 100%;
+  height: 300px;
+}
+
+#linha div h4 {
+  font-family: arial;
+  font-size: 15pt;
+  margin: 10px;
+}
+
+#linha div p {
+  font-family: arial;
+  font-size: 15pt;
+  color: black;
+  font-weight: bold; /* deixa em negrito */
+}
+
+/* ========================================== final da linha cardapio =========================================== */
+
+/* =============================================== formatação CSS para a página contato =================================== */
+
+main form {
+  width: 40%;
+  padding: 10px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main form input[type="text"],
+main form input[type="email"],
+main form input[type="tel"],
+main form select,
+main form textarea {
+  background-color: black;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 0px;
+  border-bottom: 10px solid rgb(134, 130, 130);
+  border-radius: 15px;
+  display: block;
+  font-weight: bold;
+  color: white;
+}
+main form input[type="tel"],
+main form select {
+  width: 30%;
+  display: inline-block;
+  margin: 17px;
+  margin-left: 70px;
+}
+
+main form select {
+  background-color: black;
+}
+main form textarea {
+  border-radius: 0px;
+  height: 250px;
+  border: 1px solid silver;
+  color: white;
+}
+
+main form input[type="submit"] {
+  padding: 10px;
+  border: 0px;
+  background-color: silver;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  border-radius: 7px;
+}
+
+/* =================================== fim do CSS para contato ======================================= */
+
+#mapa iframe {
+  width: 97%;
+  height: 500px;
+  box-shadow: 3px 3px 15px black;
+}
+
+/* ========================== area dos breakpoints =================================== */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 0px) and (max-width: 575px) {
+  header {
+    background-size: cover;
+    background-position: 0px 0px;
+  }
+
+  nav {
+    width: 150px;
+    height: 100vh; /*altura da tela do dispositivo */
+    position: absolute; /* definindo uma posição "fixa" na tela */
+    z-index: 10000; /*empilhamento fazendo ficar acima de 9999 itens */
+    top: 0px; /* posição inicial de topo */
+    left: -150px; /* posição inicial a esquerda 0 */
+    padding-top: 100px;
+    text-align: left;
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+  #imghome img {
+    border-radius: 0px;
+    opacity: 1;
+    transition: ease 1s;
+  }
+
+  body {
+    background-color: silver;
+  }
+}
+@media (min-width: 576px) {
+  body {
+    background-color: black;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    background-color: orangered;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    background-color: yellow;
+  }
+}
