@@ -220,7 +220,7 @@ h3 {
 main form {
   width: 40%;
   padding: 10px;
-  background-color: rgb(32, 8, 8);
+  background-color: white;
   margin-left: auto;
   margin-right: auto;
 }
@@ -230,14 +230,16 @@ main form input[type="email"],
 main form input[type="tel"],
 main form select,
 main form textarea {
-  background-color: white;
+  background-color: black;
   width: 100%;
   padding: 10px;
   margin-top: 10px;
   border: 0px;
-  border-bottom: 10px solid silver;
+  border-bottom: 10px solid rgb(134, 130, 130);
   border-radius: 15px;
   display: block;
+  font-weight: bold;
+  color: white;
 }
 main form input[type="tel"],
 main form select {
@@ -247,10 +249,14 @@ main form select {
   margin-left: 70px;
 }
 
+main form select {
+  background-color: black;
+}
 main form textarea {
   border-radius: 0px;
   height: 250px;
   border: 1px solid silver;
+  color: white;
 }
 
 main form input[type="submit"] {
@@ -261,4 +267,12 @@ main form input[type="submit"] {
   cursor: pointer;
   color: black;
   border-radius: 7px;
+}
+
+/* =================================== fim do CSS para contato ======================================= */
+
+#mapa iframe {
+  width: 97%;
+  height: 500px;
+  box-shadow: 3px 3px 15px black;
 }
